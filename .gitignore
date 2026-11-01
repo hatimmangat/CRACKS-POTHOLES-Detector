@@ -1,0 +1,50 @@
+# Root .gitignore — covers all three sub-projects
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# YOLO model (see mlService/.gitignore for override instructions)
+mlService/models/best.pt
+
+# ML results (generated at runtime)
+mlService/results/*.jpg
+mlService/results/*.jpeg
+mlService/results/*.png
+
+# Build outputs
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
